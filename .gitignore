@@ -1,0 +1,8 @@
+# Never commit the license (it unlocks full output) or customer artifacts
+license.json
+*.flat.pdf
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
