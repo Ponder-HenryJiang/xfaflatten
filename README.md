@@ -1,6 +1,8 @@
-# xfa-flatten — Ponder XFA Form Flattener (Free / 3-page trial)
+# xfa-flatten — Ponder XFA Form Flattener
 
-A cross-agent skill that flattens XFA dynamic forms and AcroForm PDFs into static PDFs — **entirely on your local machine, nothing is uploaded**. This is the free version: each document outputs the first 3 pages (no watermark).
+A cross-agent skill that flattens XFA dynamic forms and AcroForm PDFs into static PDFs — **entirely on your local machine, nothing is uploaded**. PDFs containing personal information (immigration, insurance, finance) never leave your computer.
+
+This repository contains the **free trial build**: each document outputs the first 3 pages, with no watermark. It is a genuine, usable flattening tool — not a demo — so you can verify the result before deciding whether to purchase a full license.
 
 ## What's inside
 
@@ -15,7 +17,8 @@ xfaflatten/
 │   └── bin/                      <- CLI bundled here: works offline, no download
 │       ├── xfaflatten.exe
 │       └── libSkiaSharp.dll
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 The CLI is bundled in `xfa-flatten/bin/`, so **cloning this repo is enough** — no network download, no installer running as admin. The installer script (`install-xfaflatten.ps1`) simply copies the bundled exe to `%LOCALAPPDATA%\xfaflatten` and smoke-tests it; it only downloads from the internet if `bin/` is missing.
@@ -66,6 +69,12 @@ If the **free version** produces any output-quality problems — missing glyphs,
 - Windows x64 (native exe); no admin rights needed.
 - If SmartScreen blocks the first run: More info -> Run anyway.
 - Security suites like 360 may flag "PowerShell downloads an exe" as a false positive — see `xfa-flatten/references/troubleshooting.md`.
+
+## License
+
+The skill source materials (`SKILL.md`, `references/`, `scripts/`, and this README) are released under the **MIT License** — see [LICENSE](LICENSE). You are free to use, modify, and share them.
+
+The bundled native binaries in `xfa-flatten/bin/` (`xfaflatten.exe` and `libSkiaSharp.dll`) are **proprietary** and are **not** covered by the MIT License. They are supplied here as a free trial build limited to the first 3 pages per document; full functionality requires a paid license (email **Ponder_Henry_Jiang@foxmail.com**).
 
 ## Branding
 
